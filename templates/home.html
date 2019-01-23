@@ -6,6 +6,8 @@
 {% block content %}
 {% if user.is_authenticated %}
   Hi {{ user.username }}!
+  <li><a href="http://127.0.0.1:8000/">Trang chủ</a></li>
+  <li><a href="http://127.0.0.1:8000/blog/">blog</a></li>
   <p><a href="{% url 'logout' %}">logout</a></p>
   <p><a href="{% url 'password_reset' %}">reset password</a></p>
 {% else %}
